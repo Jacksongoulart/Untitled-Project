@@ -14,14 +14,14 @@ class EventosDAO implements IEvento {
 							'".$evento->getCorEvento()."' , '".$evento->getHorarioTermino."' ,
 							'".$evento->getHorarioInicio."');";
 			
-			$query = mysql_query($sql);
-
+			$query = mysqli->query($sql);
+			
 			$sql = "INSERT INTO enderecoevento 
 					VALUES (null,SELECT LAST_INSERT_ID();, '".$evento->getDescricao()."' , 
 							'".$evento->getTipoEvento()."',	'".$evento->getCorEvento()."' ,
 							'".$evento->getHorarioTermino."', '".$evento->getHorarioInicio."');";
 			
-			$query = mysql_query($sql);
+			$query = mysqli->query($sql);
 
 
 		}
@@ -36,7 +36,7 @@ class EventosDAO implements IEvento {
 						bairro= '".$evento->getBairro()."' ,
 						cidade= '".$evento->getCidade()."' ,
 						estado= '".$evento->getEstado()."';";
-			$query = mysql_query($sql);
+			$query = mysqli->query($sql);
 
 
 			$sql = "UPDATE evento
@@ -47,8 +47,8 @@ class EventosDAO implements IEvento {
 					horario_termino= '".$evento->getHorarioTermino()."',
 					horario_inicio= '".$evento->getHorarioInicio()."';"; 
 
-			$query = mysql_query($sql);
-			$row = mysql_fetch_array($query);
+			$query = mysqli->query($sql);
+			
 
 		}
 
@@ -58,9 +58,9 @@ class EventosDAO implements IEvento {
 			$sql = "SELECT * FROM evento WHERE '".$evento->getTipoEvento()."';";
 
 
-			$query = mysql_query($sql);
+			$query = mysqli->query($sql);
 
-			$row = mysql_fetch_array($query);
+			$row = $query->fetch_array(MYSQLI_BOTH);
 
 			if($row)
 				return self::criarObjeto($row);
@@ -71,13 +71,7 @@ class EventosDAO implements IEvento {
 		public static function deleta($evento){
 
 			$sql = "DELETE FROM evento WHERE id_evento =".$evento->getIdEvento().";";
-
-			$query = mysql_query($sql);
-
-			$row = mysql_fetch_array($query);
-
-			if($row)
-				return self::criarObejto($row);
+			$query = mysqli->query($sql);
 
 		}
 

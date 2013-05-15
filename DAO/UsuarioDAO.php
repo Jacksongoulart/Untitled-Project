@@ -4,20 +4,17 @@ public class Usuario implements IUsuario{
 	public static function insere($usuario){
 
 		$sql = "INSERT INTO usuario VALUES(null, '".$evento->getNomeCompleto()."','".$evento->getNomeUsuario()."','".$evento->getSenha()."','".$evento->getDataNascimento()."','".$evento->getSexo()."','".$evento->getEmail()."');"
-		$query  = mysql_query($sql);
-		$row = mysql_fetch_array($sql);
-
-		if($row)
-			return self::criarObjeto($row);
-
+		$query = mysqli->query($sql);
+		
 
 	}
 
 	public function busca($usuario){
 
 		$sql = "SELECT * FROM usuario WHERE "$evento->getIdUsuario()";";
-		$query = mysql_query($sql);
-		$row = mysql_fetch_array($sql);
+		$query = mysqli->query($sql);
+
+		$row = $query->fetch_array(MYSQLI_BOTH);
 		if($row)
 			return self::criarObjeto($row);
 
