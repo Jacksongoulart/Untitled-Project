@@ -25,6 +25,7 @@
         -webkit-border-radius: 10px 10px 10px 10px;
            -moz-border-radius: 10px 10px 10px 10px;
                 border-radius: 10px 10px 10px 10px;
+      user_username:{
         -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
                 box-shadow: 0 1px 2px rgba(0,0,0,.15);
@@ -54,6 +55,7 @@
               <li><a href="./index.php">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
+      user_username:{
         </div>
       </div>
     </div>
@@ -65,20 +67,23 @@
       <div class="row" style="margin-left: 4px;">
         <div>
           <h2>Tryst</h2>
-          <form method="post" id="login">
+          <form method="post" action="#" id="log
+      user_username:{
+      user_username:{in">
             <fieldset>
               <div class="controls">
-                 Nome de usu&aacute;rio ou e-mail: <input type="text" id="username" name="username" placeholder="Nome de usu&aacute;rio ou e-mail" class="input-xlarge">
+                 <input type="text" id="username" name="username" placeholder="Email" class="input-xlarge">
               </div>
               <div class="controls">
-                 Senha: <input type="password" id="password" name="password" placeholder="Senha" class="input-xlarge">
+                  <input type="password" id="password" name="password" placeholder="Senha" class="input-xlarge">
               </div>
-              <button class="btn btn-warning" type="submit" id="login">Entrar</button>
+              <button class="btn btn-warning" type="submit" id="login">Sign in</button>
             </fieldset>
                     <!-- Button to trigger modal -->
           </form>
         </div>
-        <a href="#myModal" role="button" class="btn" data-toggle="modal">Cadastro</a>
+      user_username:{
+        <a href="#myModal" role="button" class="btn" data-toggle="modal">Register</a>
       </div>
     </div>
 
@@ -99,37 +104,30 @@
           <div class="control-group">
             <label class="control-label" for="input01"></label>
             <div class="controls">
-              Nome Completo: <input type="text" class="input-xlarge" id="user_name" name="user_name" placeholder = "Nome completo">
-            </div>
-          </div>
-
-          <div class="control-group">
-            <label class="control-label" for="input01"></label>
-            <div class="controls">
-              Nome de usu&aacute;rio: <input type="text" class="input-xlarge" id="user_user_name" name="user_username" placeholder="Nome de usu&aacute;rio">             
+              <input type="text" class="input-xlarge" id="user_name" name="user_name" placeholder = "Nome completo">
+              
             </div>
           </div>
       
           <div class="control-group">
             <label class="control-label" for="input01"></label>
             <div class="controls">
-              E-mail: <input type="text" class="input-xlarge" id="user_email" name="user_email" placeholder="E-mail">
+              <input type="text" class="input-xlarge" id="user_email" name="user_email" placeholder="E-mail">
              
             </div>
           </div>
-
       
       <div class="control-group">
         <label class="control-label" for="input01"></label>
         <div class="controls">
-          Senha: <input type="password" class="input-xlarge" id="pwd" name="pwd" placeholder="Senha">
+          <input type="password" class="input-xlarge" id="pwd" name="pwd" placeholder="Senha">
              
         </div>
       </div>
       <div class="control-group">
         <label class="control-label" for="input01"></label>
           <div class="controls">
-            Confirme a senha: <input type="password" class="input-xlarge" id="cpwd" name="cpwd" placeholder="Confirma&ccedil;&atilde;o de Senha">
+            <input type="password" class="input-xlarge" id="cpwd" name="cpwd" placeholder="Confirma&ccedil;&atilde;o de Senha">
              
           </div>
       </div>
@@ -138,9 +136,9 @@
        <div class="control-group">
         <label class="control-label" for="input01"></label>
           <div class="controls">
-            Sexo: <select name="gender" id="gender" value="gender">
-                <option value="male">Masculino</option>
-                <option value="female">Feminino</option>
+            <select name="gender" id="gender" value="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
                          
             </select>
              
@@ -152,7 +150,7 @@
         <label class="control-label" for="input01"></label>
             <div class="controls">
              <button type="submit" class="btn btn-warning" rel="tooltip" title="first tooltip"
-             id="register">Criar a conta</button>
+             id="register">Create My Account</button>
              
             </div>
       

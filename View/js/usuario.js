@@ -16,6 +16,10 @@ $(document).ready( function() {
 				required: true, /* Campo obrigatório */
                                 minlength: 10    /* No mínimo 10 caracteres */
 			},
+			user_username:{
+				required: true,
+								minlength: 6
+			},
 			user_email:{
 				required: true, /* Campo obrigatório */
                                 email: true     /* Deverá ser um email válido */
@@ -35,7 +39,11 @@ $(document).ready( function() {
 		messages:{
 			user_name:{
 				required: "Preencha o campo <u>Nome</u>",
-				minlength: "O campo <u>Nome</u> deve conter no m&iagudo;nimo 6 caracteres"
+				minlength: "O campo <u>Nome</u> deve conter no m&iagudo;nimo 10 caracteres"
+			},
+			user_username:{
+				required: "Preencha o campo <u>Nome de usu&aacute;rio",
+				minlength: "O campo <u>Nome de usu&aacute;rio deve conter no mínimo 6 caracteres"
 			},
 			user_email:{
 				required: "Preencha o campo <u>Email</u>",
