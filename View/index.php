@@ -94,58 +94,68 @@
       <div class="modal-body">
 
 
-        <form class="form-center" id="register" method='post' action=''>
+        <form class="form-horizontal" id="register" method='post' action='?' align="left"  >
         <fieldset>
           <div class="control-group">
-            <label class="control-label" for="input01"></label>
+            <label class="control-label" for="input01">Nome Completo</label>
             <div class="controls">
-              Nome Completo: <input type="text" class="input-xlarge" id="user_name" name="user_name" placeholder = "Nome completo">
+              <input type="text" class="input-xlarge" id="user_name" name="user_name" placeholder = "Nome completo">
             </div>
           </div>
 
           <div class="control-group">
-            <label class="control-label" for="input01"></label>
+            <label class="control-label" for="input01">Data de Nascimento</label>
             <div class="controls">
-              Nome de usu&aacute;rio: <input type="text" class="input-xlarge" id="user_user_name" name="user_username" placeholder="Nome de usu&aacute;rio">             
+              <input type="date" class="input-large" id="data_nascimento" name="data_nascimento" placeholder="">             
             </div>
           </div>
-      
+                    
+
           <div class="control-group">
-            <label class="control-label" for="input01"></label>
+          <label class="control-label" for="input01">Sexo</label>
             <div class="controls">
-              E-mail: <input type="text" class="input-xlarge" id="user_email" name="user_email" placeholder="E-mail">
+              <select name="gender" id="gender" value="gender" required>
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+                  <option value="female">Outro</option>
+                           
+              </select>
+               
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="input01">Nome de usu&aacute;rio</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="user_user_name" name="user_username" placeholder="Nome de usu&aacute;rio">             
+            </div>
+          </div>
+
+
+         
+          <div class="control-group">
+            <label class="control-label" for="input01">E-mail</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="user_email" name="user_email" placeholder="E-mail">
              
             </div>
           </div>
 
       
       <div class="control-group">
-        <label class="control-label" for="input01"></label>
+        <label class="control-label" for="input01">Senha</label>
         <div class="controls">
-          Senha: <input type="password" class="input-xlarge" id="pwd" name="pwd" placeholder="Senha">
+          <input type="password" class="input-xlarge" id="pwd" name="pwd" placeholder="Senha">
              
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="input01"></label>
+        <label class="control-label" for="input01">Confirme a senha</label>
           <div class="controls">
-            Confirme a senha: <input type="password" class="input-xlarge" id="cpwd" name="cpwd" placeholder="Confirma&ccedil;&atilde;o de Senha">
+            <input type="password" class="input-xlarge" id="cpwd" name="cpwd" placeholder="Confirma&ccedil;&atilde;o de Senha">
              
           </div>
       </div>
-      
-      
-       <div class="control-group">
-        <label class="control-label" for="input01"></label>
-          <div class="controls">
-            Sexo: <select name="gender" id="gender" value="gender">
-                <option value="male">Masculino</option>
-                <option value="female">Feminino</option>
-                         
-            </select>
-             
-          </div>
-        </div>
       
       
       <div class="control-group">
@@ -167,7 +177,6 @@
       </div>
     </div>
 
-
-
   </body>
 </html>
+   

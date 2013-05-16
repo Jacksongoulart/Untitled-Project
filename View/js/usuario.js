@@ -18,7 +18,8 @@ $(document).ready( function() {
 			},
 			user_username:{
 				required: true,
-								minlength: 6
+					minlength: 6
+
 			},
 			user_email:{
 				required: true, /* Campo obrigatório */
@@ -31,7 +32,8 @@ $(document).ready( function() {
 			
 			cpwd:{
 				required: true, /* Campo obrigatório */
-					minlength: 6      /* No mínimo 6 caracteres */
+					minlength: 6,      /* No mínimo 6 caracteres */
+						equalTo: "#pwd"   /* Senhas iguais */
 			},	
 		},
 
@@ -39,12 +41,14 @@ $(document).ready( function() {
 		messages:{
 			user_name:{
 				required: "Preencha o campo <u>Nome</u>",
-				minlength: "O campo <u>Nome</u> deve conter no m&iagudo;nimo 10 caracteres"
+				minlength: "O campo <u>Nome</u> deve conter no m&iacute;nimo 10 caracteres"
 			},
+
 			user_username:{
-				required: "Preencha o campo <u>Nome de usu&aacute;rio",
-				minlength: "O campo <u>Nome de usu&aacute;rio deve conter no mínimo 6 caracteres"
+				required: "Preencha o campo <u>Usu&aacute;rio</u>",
+				minlength: "O campo <u>Usu&aacute;rio</u> deve conter no m&iacute;nimo 6 caracteres"
 			},
+
 			user_email:{
 				required: "Preencha o campo <u>Email</u>",
 				email: "O campo <u>Email</u> s&oacute; aceita emails v&aacute;lidos"
@@ -57,7 +61,8 @@ $(document).ready( function() {
 			
 			cpwd:{
 				required: "Preencha o campo <u>Confirma&ccedil;&atilde;o de Senha</u>",
-				minlength: "O campo <u>Confirma&ccedil;&atilde;o de Senha</u> deve conter no m&iacute;nimo 6 caracteres"
+				minlength: "O campo <u>Confirma&ccedil;&atilde;o de Senha</u> deve conter no m&iacute;nimo 6 caracteres",
+				equalTo: "As senhas n&atilde;o coincidem"
 			},
 		}
 	});
