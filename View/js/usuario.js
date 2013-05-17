@@ -14,7 +14,8 @@ $(document).ready( function() {
 		rules:{
 			user_name:{
 				required: true, /* Campo obrigatório */
-                                minlength: 10    /* No mínimo 10 caracteres */
+                  	minlength: 10,    /* No mínimo 10 caracteres */
+                  		maxlength: 80	/* No máximo 80 caracteres */
 			},
 			user_username:{
 				required: true,
@@ -41,7 +42,8 @@ $(document).ready( function() {
 		messages:{
 			user_name:{
 				required: "Preencha o campo <u>Nome</u>",
-				minlength: "O campo <u>Nome</u> deve conter no m&iacute;nimo 10 caracteres"
+				minlength: "O campo <u>Nome</u> deve conter no m&iacute;nimo 10 caracteres",
+				maxlength: "O campo <u>Nome</u> deve conter no m&aacute;ximo 80 caracteres"
 			},
 
 			user_username:{

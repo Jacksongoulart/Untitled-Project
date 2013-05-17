@@ -1,5 +1,8 @@
 <?php
 
+include ("../Controller/ControleUsuario.php");
+
+
 	class ControleUsuario {
 
 		private $usuario;

@@ -68,10 +68,10 @@
           <form method="post" id="login">
             <fieldset>
               <div class="controls">
-                 Nome de usu&aacute;rio ou e-mail: <input type="text" id="username" name="username" placeholder="Nome de usu&aacute;rio ou e-mail" class="input-xlarge">
+                <input type="text" id="username" name="username" placeholder="Nome de usu&aacute;rio ou e-mail" class="input-xlarge">
               </div>
               <div class="controls">
-                 Senha: <input type="password" id="password" name="password" placeholder="Senha" class="input-xlarge">
+                <input type="password" id="password" name="password" placeholder="Senha" class="input-xlarge">
               </div>
               <button class="btn btn-warning" type="submit" id="login">Entrar</button>
             </fieldset>
